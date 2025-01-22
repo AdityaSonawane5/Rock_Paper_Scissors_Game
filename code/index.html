@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">Epic Rock Paper Scissors</h1>
+        
+        <div class="difficulty-selector">
+            <label for="difficulty">Difficulty: </label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <div id="message">Choose your weapon!</div>
+
+        <div class="battle-area">
+            <div class="player-choice">
+                <h3>Your Choice</h3>
+                <img id="player-choice-img" src="" alt="Player Choice">
+            </div>
+            <div class="computer-choice">
+                <h3>Computer's Choice</h3>
+                <img id="computer-choice-img" src="" alt="Computer Choice">
+            </div>
+        </div>
+
+        <div class="score-board">
+            <div class="score">
+                <h3>Player</h3>
+                <div id="player-score" class="score-value">0</div>
+            </div>
+            <div class="score">
+                <h3>Computer</h3>
+                <div id="computer-score" class="score-value">0</div>
+            </div>
+        </div>
+
+        <div class="choices">
+            <div class="choice" data-choice="rock">
+                <img src="/images/rock.png" alt="Rock">
+                <div>Rock</div>
+            </div>
+            <div class="choice" data-choice="paper">
+                <img src="/images/paper.png" alt="Paper">
+                <div>Paper</div>
+            </div>
+            <div class="choice" data-choice="scissors">
+                <img src="/images/scissors.png" alt="Scissors">
+                <div>Scissors</div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="reset-btn" class="btn">Reset Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
