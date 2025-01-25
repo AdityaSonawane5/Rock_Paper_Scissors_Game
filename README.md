@@ -121,10 +121,6 @@ project/
 - [ ] Sound effects library
 - [ ] Account system
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
